@@ -1,6 +1,7 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 class Main {
@@ -18,10 +19,20 @@ class Main {
 
     private static List<List<String>> group_anagrams(String[] anagramList) {
         
-        int[] alphabet = new int[26]; //alphabet size
-        
+        List<List<String>> result = new ArrayList<>();
+        if (anagramList.length == 0) return result;
 
-        return null;
+        HashMap<String, List<String>> map = new HashMap<>();
+        for (String s : anagramList) {
+            char[] hash = new char[26];
+            for (char c : s.toCharArray()) {
+                hash[c - 'a']++;
+            }
+            String key = new String(hash);
+            map.computeIfAbsent(key, k -> new ArrayList<>());
+            map.get(key).add(s);
+        }
+        result.addAll(map.values());
+        return result;
     }
-
 }

@@ -14,7 +14,7 @@ class Main {
 
     private static boolean valid_anagram(String s1, String s2) {
         
-        int[] alphabet = new int[26]; //alphabet size
+        char[] alphabet = new char[26]; //alphabet size
         for (int i = 0; i < s1.length(); i++) alphabet[s1.charAt(i) - 'a']++;
         for (int i = 0; i < s2.length(); i++) alphabet[s2.charAt(i) - 'a']--;
         for (int i : alphabet) if (i != 0) return false;
