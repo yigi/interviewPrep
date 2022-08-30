@@ -23,3 +23,5 @@ word-break.java
 container-with-the-most-water.java
 
 best-time-to-buy-and-sell.java
+
+longest-substring-without-repeating-char.java
