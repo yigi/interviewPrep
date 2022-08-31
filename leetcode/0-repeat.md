@@ -33,3 +33,5 @@ valid-sudoku.java
 move-hash-strings.java
 
 string-with-count.java
+
+armstrong-number.java
