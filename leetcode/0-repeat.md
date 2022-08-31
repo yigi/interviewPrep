@@ -7,7 +7,7 @@ longest-consecutive-sequence.java
 product-except-self.java
 +
 reverse-sentence.java
-
++
 top-k-frequent.java
 
 two-sum.java
@@ -29,3 +29,7 @@ longest-substring-without-repeating-char.java
 valid-parentheses.java
 
 valid-sudoku.java
+
+move-hash-strings.java
+
+string-with-count.java
