@@ -9,7 +9,7 @@ product-except-self.java
 reverse-sentence.java
 +
 top-k-frequent.java
-
++
 two-sum.java
 
 valid-anagram.java
@@ -35,3 +35,9 @@ move-hash-strings.java
 string-with-count.java
 
 armstrong-number.java
+
+binary-search.java
+
+climb-stairs-cost.java
+
+climb-stairs.java
