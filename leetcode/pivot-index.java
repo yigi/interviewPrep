@@ -12,7 +12,7 @@ class Main {
 
     public static int pivotIndex(int[] nums) {
         if(nums.length == 1) 
-            return 1;
+            return 0;
         
         int totalsum = 0;
         for(int i = 0; i<nums.length; i++){
