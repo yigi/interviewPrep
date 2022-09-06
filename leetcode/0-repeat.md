@@ -43,3 +43,5 @@ climb-stairs-cost.java
 climb-stairs.java
 
 running-sum.java
+
+pivot-index.java
