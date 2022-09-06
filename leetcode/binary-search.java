@@ -1,5 +1,7 @@
 package leetcode;
 
+//https://leetcode.com/problems/first-bad-version/
+//https://leetcode.com/problems/search-insert-position
 
 class Main {
     public static void main(String[] args) {
