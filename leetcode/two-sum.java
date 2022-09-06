@@ -1,29 +1,29 @@
 package leetcode;
 
+//https://leetcode.com/problems/two-sum/
+
 import java.util.HashMap;
 import java.util.Map;
 
 class Main {
     public static void main(String[] args) {
      
-        Integer [] nums = {2,3,6,5};
+        int [] nums = {2,3,6,5};
         System.out.println(two_sum(nums,5));
 }
 
-    private static Integer[] two_sum(Integer[] nums, Integer target) {
-        Integer[] returnArray = new Integer[2];
-        Map<Integer, Integer> intMap = new HashMap<>();
-        for(Integer i = 0; i<nums.length; i++)
-            intMap.put(nums[i],i);
-
-       for (Integer key : intMap.keySet()) 
-       {
-            if(intMap.containsValue(target-key))
-            {
-                returnArray[0] = intMap.get(key);
-                returnArray[1] = intMap.get(target-key);
+    private static int [] two_sum(int[] nums, int target) {
+        
+        int [] ans = new int[2];
+        Map <Integer, Integer> hash = new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            if(hash.containsKey(target - nums[i])){
+                ans[0] = hash.get(target-nums[i]);
+                ans[1] = i;
+                return ans;
             }
-       }
-        return returnArray;
-    }
+            hash.put(nums[i],i);
+        }
+        return ans;
+}
 }
